@@ -1,0 +1,43 @@
+import type { Detection } from "../types/detection";
+
+export const mockDetections: Detection[] = [
+  {
+    id: "DET-001",
+    source_image: "sonar_001.png",
+    class_id: 3,
+    class_name: "ghost_net_filament",
+    confidence: 0.94,
+    bbox: [120, 80, 360, 220],
+    mask_polygon: [[120, 80], [360, 80], [360, 220], [120, 220]],
+    centroid_px: [240, 150],
+    lat: 17.658,
+    lon: 83.284,
+    triage_status: "pending",
+  },
+  {
+    id: "DET-002",
+    source_image: "sonar_002.png",
+    class_id: 0,
+    class_name: "pipe_cable",
+    confidence: 0.89,
+    bbox: [200, 100, 430, 250],
+    mask_polygon: [[200, 100], [430, 100], [430, 250], [200, 250]],
+    centroid_px: [315, 175],
+    lat: 17.682,
+    lon: 83.305,
+    triage_status: "confirmed",
+  },
+  {
+    id: "DET-003",
+    source_image: "sonar_003.png",
+    class_id: 1,
+    class_name: "cylinder_drum_mine",
+    confidence: 0.87,
+    bbox: [80, 140, 280, 300],
+    mask_polygon: [[80, 140], [280, 140], [280, 300], [80, 300]],
+    centroid_px: [180, 220],
+    lat: 17.6745,
+    lon: 83.2925,
+    triage_status: "pending",
+  },
+];

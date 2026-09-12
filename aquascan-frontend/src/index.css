@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #020617;
+  color: #e2e8f0;
+  font-family: Inter, system-ui, sans-serif;
+}
+.aquascan-map-tiles {
+  filter: brightness(0.65) saturate(0.75);
+}
